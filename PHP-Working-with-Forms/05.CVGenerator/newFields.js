@@ -22,19 +22,19 @@ function addFieldLang(ev) {
     var div = document.createElement('div');
     div.innerHTML = '<input type="text" name="Other Skills[Languages][Language][]" pattern="[A-Za-zА-яа-я]{2,20}">' +
         '<select name="Other Skills[Languages][Comprehension][]">' +
-        '<option value="comprehension">-Comprehension-</option>' +
+        '<option value="comprehension" selected disabled>-Comprehension-</option>' +
         '<option value="beginner">Beginner</option>' +
         '<option value="average">Average</option>' +
         '<option value="excellent">Excellent</option>' +
         '</select>' +
         '<select name="Other Skills[Languages][Reading][]">' +
-        '<option value="reading">-Reading-</option>' +
+        '<option value="reading" selected disabled>-Reading-</option>' +
         '<option value="beginner">Beginner</option>' +
         '<option value="average">Average</option>' +
         '<option value="excellent">Excellent</option>' +
         '</select>' +
         '<select name="Other Skills[Languages][Writing][]">' +
-        '<option value="writing">-Writing-</option>' +
+        '<option value="writing" selected disabled>-Writing-</option>' +
         '<option value="beginner">Beginner</option>' +
         '<option value="average">Average</option>' +
         '<option value="excellent">Excellent</option>' +
