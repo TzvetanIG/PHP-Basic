@@ -6,7 +6,7 @@ fieldset{
     width: 100%;
 }
 
-input {
+input, select {
     margin: 2px;
 }
 
