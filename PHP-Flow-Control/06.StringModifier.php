@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['submit'])) {
+if (!empty($_POST['input'])) {
 
     $input = $_POST['input'];
     $action = $_POST['action'];
@@ -35,7 +35,6 @@ if (isset($_POST['submit'])) {
     }
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +54,7 @@ if (isset($_POST['submit'])) {
     <input id="r5" type="radio" name="action" value="shuffleString"><label for="r5">Shuffle String</label>
     <input type="submit" name="submit" value="Submit">
 </form>
-<?php if (isset($_POST['submit'])): ?>
+<?php if (!empty($_POST['input'])): ?>
  <div>
      <?php echo $result ?>
  </div>
