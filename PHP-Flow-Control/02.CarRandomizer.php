@@ -13,7 +13,7 @@
     </form>
     <?php
     if(isset($_POST['cars'])):
-        $cars  = explode(', ', $_POST['cars']);
+        $cars  = explode(', ', htmlspecialchars($_POST['cars']));
         $colors = array('yellow', 'red', 'blue', 'green', 'silver');
     ?>
     </br>
