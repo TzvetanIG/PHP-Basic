@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Problem 2. Rich People’s Problems</title>
-    <link href="styles/01.SquareRootSum.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
     <form action="02.CarRandomizer.php" method="post">
@@ -12,7 +12,7 @@
         <input type="submit" name="submit" value="Show result">
     </form>
     <?php
-    if(isset($_POST['cars'])):
+    if(isset($_POST['cars']) && $_POST['cars'] !==''):
         $cars  = explode(', ', htmlspecialchars($_POST['cars']));
         $colors = array('yellow', 'red', 'blue', 'green', 'silver');
     ?>

@@ -28,7 +28,7 @@ endif
 <head>
     <meta charset="UTF-8">
     <title>Problem 3. Show Annual Expenses</title>
-    <link href="styles/01.SquareRootSum.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <form action="03.AnnualExpenses.php" method="post">
