@@ -2,7 +2,7 @@
 $text = $_POST['text'];
 $pattern = '/<a href=[\'\"]([^<>]+)[\'\"]>([^<>]+)<\/a>/i';
 preg_match_all($pattern, $text, $matches);
-$text = preg_replace($pattern, '[URL=\1]\2[/URL]', $text);
+$text = preg_replace($pattern, '[URL=$1]$2[/URL]', $text);
 ?>
 <!DOCTYPE html>
 <html>
